@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jan 25 17:04:29 2022
+# Process ID: 25712
+# Current directory: C:/Users/varna/GitHub/eecs151/lab1/lab1/lab1.runs/impl_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27368 C:\Users\varna\GitHub\eecs151\lab1\lab1\lab1.runs\impl_1\z1top_routed.dcp
+# Log file: C:/Users/varna/GitHub/eecs151/lab1/lab1/lab1.runs/impl_1/vivado.log
+# Journal file: C:/Users/varna/GitHub/eecs151/lab1/lab1/lab1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint C:/Users/varna/GitHub/eecs151/lab1/lab1/lab1.runs/impl_1/z1top_routed.dcp
