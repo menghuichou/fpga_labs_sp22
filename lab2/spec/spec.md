@@ -26,7 +26,7 @@ We will open a channel for you to ask questions live during each FPGA lab sessio
 ## If you are using your local Windows Vivado
 
 ### Create a project in Vivado for this lab
-1. In the Vivado launcher, create a new project, select "RTL project". 
+1. In the Vivado launcher, create a new project **outside of your github folder**, select "RTL project". 
 2. Add all ".v" files in the "lab2/src/" folder as "design sources", add all ".v" files in the "lab2/sim/" folder as "simulation sources", and add the ".xdc" file in the "lab2/src/" folder as "constraints".
 3. Select the pynq-z1 board. **Make sure you have Pynq-z1 board support.** If you don’t have pynq-z1 board support, you could download: https://github.com/cathalmccabe/pynq-z1_board_files, then you can paste this pynq_z1 folder to {Vivado install directory}/data/boards/board_files/ (you need to manually create /board_files folder under /boards if you don’t see one)
 
@@ -84,6 +84,16 @@ Typically, this is done before putting our design on the FPGA, but because the a
 
 To do this, we will need to use a *Verilog testbench*.
 A Verilog testbench is designed to test a Verilog module by supplying it with the inputs it needs (stimulus signals) and testing whether the outputs of the module match what we expect.
+
+### If you are running Vivado on Windows
+Unfortunately there's compatibility issue with assert() and ```$vcdpluson/off``` on Verilog in newest versions of Vivado. Also, we're not using iVerilog on Windows, so there are some changes you have to do:
+1. In your github folder for lab2/sim/, change "xxx.v" (testbench name) to "xxx.sv" (SystemVerilog file type, where assertion is supported for Vivado) and add it to your project.
+2. Comment out the lines in testbench
+```verilog
+`ifndef IVERILOG
+    $vcdpluson/off
+`endif
+```
 
 ### Overview of Testbench Skeleton
 Check the provided testbench skeleton in `lab2/sim/adder_testbench.v`.
