@@ -29,6 +29,27 @@ module counter_testbench();
 
         // TODO: Change input values and step forward in time to test
         // your counter and its clock enable/disable functionality.
+        ce = 1;
+        clock = 1 * SECOND;
+        #(2);
+        assert(LEDS == 4'd1) else $display("ERROR: Expected LEDS to be 1, actual value: %d", LEDS);
+        
+        clock = 8 * SECOND;
+        #(2);
+        assert(LEDS == 4'd8) else $display("ERROR: Expected LEDS to be 8, actual value: %d", LEDS);
+        
+        clock = 15 * SECOND;
+        #(2);
+        assert(LEDS == 4'd15) else $display("ERROR: Expected LEDS to be 15, actual value: %d", LEDS);
+        
+        clock = 16 * SECOND;
+        #(2);
+        assert(LEDS == 4'd0) else $display("ERROR: Expected LEDS to be 0, actual value: %d", LEDS);
+        
+        ce = 0;
+        clock = 6 * SECOND;
+        #(2);
+        assert(LEDS == 4'd0) else $display("ERROR: Expected LEDS to be 0, actual value: %d", LEDS);
 
 
         `ifndef IVERILOG

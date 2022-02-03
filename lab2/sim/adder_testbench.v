@@ -13,7 +13,7 @@ module adder_testbench();
         .b(b),
         .sum(sum)
     );
-
+/*
     initial begin
         `ifdef IVERILOG
             $dumpfile("adder_testbench.fst");
@@ -22,7 +22,7 @@ module adder_testbench();
         `ifndef IVERILOG
             $vcdpluson;
         `endif
-
+*/
         a = 14'd1;
         b = 14'd1;
         #(2);

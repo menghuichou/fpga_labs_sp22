@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/varna/GitHub/eecs151/lab2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/varna/GitHub/eecs151/lab2/src/adder_tester.v,1643246804,verilog,,C:/Users/varna/GitHub/eecs151/lab2/src/behavioral_adder.v,,adder_tester,,,,,,,,
+C:/Users/varna/GitHub/eecs151/lab2/src/behavioral_adder.v,1643246804,verilog,,C:/Users/varna/GitHub/eecs151/lab2/src/full_adder.v,,behavioral_adder,,,,,,,,
+C:/Users/varna/GitHub/eecs151/lab2/src/counter.v,1643767795,verilog,,C:/Users/varna/GitHub/eecs151/lab2/src/z1top.v,,counter,,,,,,,,
+C:/Users/varna/GitHub/eecs151/lab2/src/full_adder.v,1643248930,verilog,,C:/Users/varna/GitHub/eecs151/lab2/src/structural_adder.v,,full_adder,,,,,,,,
+C:/Users/varna/GitHub/eecs151/lab2/src/structural_adder.v,1643252572,verilog,,C:/Users/varna/GitHub/eecs151/lab2/src/z1top.v,,structural_adder,,,,,,,,
+C:/Users/varna/GitHub/eecs151/lab2/src/z1top.v,1643664136,verilog,,,,z1top,,,,,,,,
